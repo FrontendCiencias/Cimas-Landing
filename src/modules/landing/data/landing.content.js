@@ -10,12 +10,8 @@ const landingContent = {
   },
   bulletins: [
     {
-      title: "Boletín Informativo - Colegio Ciencias",
-      url: "https://www.cienciasmajes.com/pdfs/b_ciencias_2026.pdf",
-    },
-    {
-      title: "Boletín Informativo - Colegio Ciencias Aplicadas",
-      url: "https://www.cienciasmajes.com/pdfs/b_ciencias_2026.pdf",
+      title: "Boletín Informativo - Colegio Cimas",
+      url: "https://www.cienciasmajes.com/pdfs/b_cimas_2026.pdf",
     },
   ],
   levels: [

@@ -33,10 +33,6 @@ export default function BulletinsSection({ brand, bulletins }) {
             </div>
           ))}
         </div>
-
-        <p className="text-sm text-gray-500 mt-6">
-          Nota: Cimas tendrá su web en otro dominio y no se incluye en esta landing.
-        </p>
       </div>
     </section>
   );
