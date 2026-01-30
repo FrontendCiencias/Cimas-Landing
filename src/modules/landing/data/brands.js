@@ -25,13 +25,17 @@ export const BRANDS = {
     key: "CIMAS",
     label: "Cimas",
     badge: "Colegio Cimas",
-    gradientFrom: "#FFB300",
-    gradientVia: "#EF4444",
-    gradientTo: "#EF4444",
+
+    gradientFrom: "#EF4444", // rojo base
+    gradientVia: "#DC2626",  // rojo más profundo
+    gradientTo: "#a32727",   // gris medio (logo)
+
+
     accent: "#EF4444",
     accentSoft: "rgba(239, 68, 68, 0.15)",
     textOnAccent: "#FFFFFF",
-  },
+  }
+
 };
 
 export const DEFAULT_BRAND_KEY = "CIMAS";
