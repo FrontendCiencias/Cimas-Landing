@@ -25,15 +25,14 @@ export const BRANDS = {
     key: "CIMAS",
     label: "Cimas",
     badge: "Colegio Cimas",
-    gradientFrom: "#EF4444",
-    gradientVia: "#F97316",
-    gradientTo: "#F59E0B",
+    gradientFrom: "#FFB300",
+    gradientVia: "#EF4444",
+    gradientTo: "#EF4444",
     accent: "#EF4444",
     accentSoft: "rgba(239, 68, 68, 0.15)",
     textOnAccent: "#FFFFFF",
-    externalUrl: "https://www.cimasperu.edu.pe",
   },
 };
 
-export const DEFAULT_BRAND_KEY = "CIENCIAS";
+export const DEFAULT_BRAND_KEY = "CIMAS";
 export const BRAND_STORAGE_KEY = "dyone.landing.brand";

@@ -10,15 +10,15 @@ function BrandPill({ label }) {
 }
 
 function BrandSwitch({ brandKey, onSelectBrand }) {
-  const handleCimas = () => {
-    window.location.href = "https://www.cimasperu.edu.pe";
+  const handleCiencias = () => {
+    window.location.href = "https://www.cienciasperu.edu.pe";
   };
 
   return (
     <div className="bg-white/20 backdrop-blur-sm rounded-full p-1 flex">
       <button
         type="button"
-        onClick={() => onSelectBrand("CIENCIAS")}
+        onClick={handleCiencias}
         className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
           brandKey === "CIENCIAS" ? "bg-white text-gray-900" : "text-white hover:bg-white/10"
         }`}
@@ -28,7 +28,7 @@ function BrandSwitch({ brandKey, onSelectBrand }) {
 
       <button
         type="button"
-        onClick={() => onSelectBrand("APLICADAS")}
+        onClick={handleCiencias}
         className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
           brandKey === "APLICADAS" ? "bg-white text-gray-900" : "text-white hover:bg-white/10"
         }`}
@@ -38,9 +38,10 @@ function BrandSwitch({ brandKey, onSelectBrand }) {
 
       <button
         type="button"
-        onClick={handleCimas}
-        className="px-4 py-2 rounded-full text-sm font-semibold transition text-white hover:bg-white/10"
-        title="Ir a la web de Cimas"
+        onClick={() => onSelectBrand("CIMAS")}
+        className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
+          brandKey === "CIMAS" ? "bg-white text-gray-900" : "text-white hover:bg-white/10"
+        }`}
       >
         Cimas
       </button>
@@ -83,7 +84,6 @@ export default function HeroSection({
       <div className="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
         <div className="text-center">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <BrandPill label={brand.badge} />
             <BrandSwitch brandKey={brandKey} onSelectBrand={setBrandKey} />
           </div>
 
